@@ -9,6 +9,8 @@
 #import "FirstViewController.h"
 #import "SimpleCell.h"
 #import "HeaderView.h"
+#import "UICollectionViewShelfLayout.h"
+
 @interface FirstViewController ()
 
 @end
@@ -29,15 +31,20 @@
     [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HEADER_ID"];
     UINib *footerNib = [UINib nibWithNibName:@"FooterView" bundle:nil];
     [self.collectionView registerNib:footerNib forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FOOTER_ID"];
-
     
-    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+//    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+    UICollectionViewShelfLayout *layout = [UICollectionViewShelfLayout new];
+    self.collectionView.collectionViewLayout = layout;
     layout.minimumLineSpacing = 20.0;
     layout.itemSize = CGSizeMake(100, 100);
     layout.sectionInset = UIEdgeInsetsMake(20, 20, 40, 20);
     layout.headerReferenceSize = CGSizeMake(500, 65);
     layout.footerReferenceSize = CGSizeMake(500, 75);
     
+    UINib *decorationNib = [UINib nibWithNibName:@"DecorationView" bundle:nil];
+    [layout registerNib:decorationNib forDecorationViewOfKind:@"Shelf"];
+
+    self.navigationItem.title = @"Simple Collection Using Flow layout";
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +67,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SimpleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SIMPLE_CELL_ID" forIndexPath:indexPath];
     cell.label = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
+    cell.transform = CGAffineTransformMakeRotation(arc4random()%1*M_2_PI);
     return cell;
 }
 
@@ -68,13 +76,8 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize itemSize = CGSizeMake(50, 50);
-    CGFloat xOffset = arc4random()%50;
-    CGFloat yOffset = arc4random()%50;
-    itemSize.width += xOffset;
-    itemSize.height += yOffset;
-    
-    return itemSize;
+
+    return CGSizeMake(50 + arc4random()%50, 50 + arc4random()%50);
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -90,4 +93,6 @@
     }
     return nil;
 }
+
+
 @end

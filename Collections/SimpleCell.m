@@ -16,7 +16,7 @@
     if (self) {
         // Initialization code
         UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-        bg.backgroundColor = [UIColor greenColor];
+        bg.backgroundColor = [self randomColor];
         
         UIView *selectedBg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         selectedBg.backgroundColor = [UIColor yellowColor];
@@ -46,4 +46,7 @@
 }
 */
 
+- (UIColor*)randomColor {
+    return [UIColor colorWithRed:arc4random()%256/255. green:arc4random()%256/255. blue:arc4random()%256/255. alpha:1];
+}
 @end

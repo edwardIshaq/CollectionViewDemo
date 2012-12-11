@@ -29,6 +29,10 @@
 		DB8CD99016765DA900F498B7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98F16765DA900F498B7 /* second.png */; };
 		DB8CD99216765DA900F498B7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD99116765DA900F498B7 /* second@2x.png */; };
 		DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD9991676638D00F498B7 /* SimpleCell.m */; };
+		DBA0D4511677A3CF00F9B040 /* shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4501677A3CF00F9B040 /* shelf.png */; };
+		DBA0D4541677A3E700F9B040 /* DecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4531677A3E700F9B040 /* DecorationView.xib */; };
+		DBA0D4571677B1C400F9B040 /* UICollectionViewShelfLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */; };
+		DBA0D4591677B79A00F9B040 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA0D4581677B79A00F9B040 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,11 @@
 		DB8CD99116765DA900F498B7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DB8CD9981676638D00F498B7 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCell.h; sourceTree = "<group>"; };
 		DB8CD9991676638D00F498B7 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCell.m; sourceTree = "<group>"; };
+		DBA0D4501677A3CF00F9B040 /* shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf.png; sourceTree = "<group>"; };
+		DBA0D4531677A3E700F9B040 /* DecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecorationView.xib; sourceTree = "<group>"; };
+		DBA0D4551677B1C400F9B040 /* UICollectionViewShelfLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewShelfLayout.h; sourceTree = "<group>"; };
+		DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewShelfLayout.m; sourceTree = "<group>"; };
+		DBA0D4581677B79A00F9B040 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA0D4591677B79A00F9B040 /* QuartzCore.framework in Frameworks */,
 				DB8CD96B16765DA800F498B7 /* UIKit.framework in Frameworks */,
 				DB8CD96D16765DA800F498B7 /* Foundation.framework in Frameworks */,
 				DB8CD96F16765DA800F498B7 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +101,10 @@
 				DB2B19F7167788E80054CCD6 /* blue_header.jpeg */,
 				DB2B19FA16778B7A0054CCD6 /* footer.jpeg */,
 				DB2B19FC16778B910054CCD6 /* FooterView.xib */,
+				DBA0D4501677A3CF00F9B040 /* shelf.png */,
+				DBA0D4531677A3E700F9B040 /* DecorationView.xib */,
+				DBA0D4551677B1C400F9B040 /* UICollectionViewShelfLayout.h */,
+				DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */,
 			);
 			name = "Simple Collection";
 			sourceTree = "<group>";
@@ -115,6 +129,7 @@
 		DB8CD96916765DA800F498B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBA0D4581677B79A00F9B040 /* QuartzCore.framework */,
 				DB8CD96A16765DA800F498B7 /* UIKit.framework */,
 				DB8CD96C16765DA800F498B7 /* Foundation.framework */,
 				DB8CD96E16765DA800F498B7 /* CoreGraphics.framework */,
@@ -218,6 +233,8 @@
 				DB2B19F8167788E80054CCD6 /* blue_header.jpeg in Resources */,
 				DB2B19FB16778B7A0054CCD6 /* footer.jpeg in Resources */,
 				DB2B19FD16778B910054CCD6 /* FooterView.xib in Resources */,
+				DBA0D4511677A3CF00F9B040 /* shelf.png in Resources */,
+				DBA0D4541677A3E700F9B040 /* DecorationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +251,7 @@
 				DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */,
 				DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */,
 				DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */,
+				DBA0D4571677B1C400F9B040 /* UICollectionViewShelfLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
