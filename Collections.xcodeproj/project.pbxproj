@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2B19F2167788390054CCD6 /* HeaderView.m */; };
+		DB2B19F6167788520054CCD6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19F5167788520054CCD6 /* HeaderView.xib */; };
+		DB2B19F8167788E80054CCD6 /* blue_header.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19F7167788E80054CCD6 /* blue_header.jpeg */; };
+		DB2B19FB16778B7A0054CCD6 /* footer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19FA16778B7A0054CCD6 /* footer.jpeg */; };
+		DB2B19FD16778B910054CCD6 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19FC16778B910054CCD6 /* FooterView.xib */; };
 		DB8CD96B16765DA800F498B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96A16765DA800F498B7 /* UIKit.framework */; };
 		DB8CD96D16765DA800F498B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96C16765DA800F498B7 /* Foundation.framework */; };
 		DB8CD96F16765DA800F498B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96E16765DA800F498B7 /* CoreGraphics.framework */; };
@@ -23,9 +28,16 @@
 		DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98D16765DA900F498B7 /* SecondViewController.m */; };
 		DB8CD99016765DA900F498B7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98F16765DA900F498B7 /* second.png */; };
 		DB8CD99216765DA900F498B7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD99116765DA900F498B7 /* second@2x.png */; };
+		DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD9991676638D00F498B7 /* SimpleCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB2B19F1167788390054CCD6 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		DB2B19F2167788390054CCD6 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		DB2B19F5167788520054CCD6 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		DB2B19F7167788E80054CCD6 /* blue_header.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_header.jpeg; sourceTree = "<group>"; };
+		DB2B19FA16778B7A0054CCD6 /* footer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footer.jpeg; sourceTree = "<group>"; };
+		DB2B19FC16778B910054CCD6 /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
 		DB8CD96616765DA800F498B7 /* Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8CD96A16765DA800F498B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB8CD96C16765DA800F498B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +60,8 @@
 		DB8CD98D16765DA900F498B7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DB8CD98F16765DA900F498B7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DB8CD99116765DA900F498B7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		DB8CD9981676638D00F498B7 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCell.h; sourceTree = "<group>"; };
+		DB8CD9991676638D00F498B7 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB2B19F916778B390054CCD6 /* Simple Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DB8CD98516765DA800F498B7 /* FirstViewController.h */,
+				DB8CD98616765DA800F498B7 /* FirstViewController.m */,
+				DB8CD9981676638D00F498B7 /* SimpleCell.h */,
+				DB8CD9991676638D00F498B7 /* SimpleCell.m */,
+				DB2B19F1167788390054CCD6 /* HeaderView.h */,
+				DB2B19F2167788390054CCD6 /* HeaderView.m */,
+				DB2B19F5167788520054CCD6 /* HeaderView.xib */,
+				DB2B19F7167788E80054CCD6 /* blue_header.jpeg */,
+				DB2B19FA16778B7A0054CCD6 /* footer.jpeg */,
+				DB2B19FC16778B910054CCD6 /* FooterView.xib */,
+			);
+			name = "Simple Collection";
+			sourceTree = "<group>";
+		};
 		DB8CD95B16765DA800F498B7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +125,10 @@
 		DB8CD97016765DA800F498B7 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
+				DB2B19F916778B390054CCD6 /* Simple Collection */,
 				DB8CD97916765DA800F498B7 /* AppDelegate.h */,
 				DB8CD97A16765DA800F498B7 /* AppDelegate.m */,
 				DB8CD98216765DA800F498B7 /* MainStoryboard.storyboard */,
-				DB8CD98516765DA800F498B7 /* FirstViewController.h */,
-				DB8CD98616765DA800F498B7 /* FirstViewController.m */,
 				DB8CD98816765DA800F498B7 /* first.png */,
 				DB8CD98A16765DA800F498B7 /* first@2x.png */,
 				DB8CD98C16765DA800F498B7 /* SecondViewController.h */,
@@ -184,6 +214,10 @@
 				DB8CD98B16765DA800F498B7 /* first@2x.png in Resources */,
 				DB8CD99016765DA900F498B7 /* second.png in Resources */,
 				DB8CD99216765DA900F498B7 /* second@2x.png in Resources */,
+				DB2B19F6167788520054CCD6 /* HeaderView.xib in Resources */,
+				DB2B19F8167788E80054CCD6 /* blue_header.jpeg in Resources */,
+				DB2B19FB16778B7A0054CCD6 /* footer.jpeg in Resources */,
+				DB2B19FD16778B910054CCD6 /* FooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +232,8 @@
 				DB8CD97B16765DA800F498B7 /* AppDelegate.m in Sources */,
 				DB8CD98716765DA800F498B7 /* FirstViewController.m in Sources */,
 				DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */,
+				DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */,
+				DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +350,7 @@
 				DB8CD99716765DA900F498B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

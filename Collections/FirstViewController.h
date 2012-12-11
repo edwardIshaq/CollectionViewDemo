@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (retain, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
