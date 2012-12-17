@@ -66,52 +66,66 @@
             </objects>
             <point key="canvasLocation" x="2907" y="137"/>
         </scene>
-        <!--Second View Controller - Second-->
+        <!--Circular Layout View Controller - Second-->
         <scene sceneID="13">
             <objects>
-                <viewController id="3" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController id="3" customClass="CircularLayoutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="20" width="768" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Circular Layout" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="21">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="22">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ulG-et-FCy">
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.46274509800000002" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="39I-E8-1dg"/>
-                                    <constraint firstAttribute="width" constant="297" id="F6J-XU-KBh"/>
+                                    <constraint firstAttribute="height" constant="768" type="user" id="YW9-Ne-Gqx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23">
-                                <items>
-                                    <navigationItem id="24"/>
-                                </items>
-                            </navigationBar>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cUB-KF-8Tv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="420-sR-N0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3" id="qYs-vX-29v"/>
+                                    <outlet property="delegate" destination="3" id="d8z-cZ-NbW"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7D6-ef-UU9"/>
-                            <constraint firstItem="22" firstAttribute="top" secondItem="16" secondAttribute="top" constant="350" id="Gbp-Dd-WCJ"/>
-                            <constraint firstItem="22" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="235" id="Xcq-Zb-R4f"/>
-                            <constraint firstItem="23" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="YQd-P8-ET5"/>
-                            <constraint firstItem="23" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="eH6-Me-VTD"/>
-                            <constraint firstItem="23" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="kTD-uS-vbp"/>
-                            <constraint firstItem="21" firstAttribute="top" secondItem="16" secondAttribute="top" constant="250" id="mE7-QV-f5n"/>
-                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="v87-JO-j7C"/>
+                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AxC-eB-Aj5"/>
+                            <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="V6v-g0-Zr8"/>
+                            <constraint firstItem="ulG-et-FCy" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="nIP-1v-YIJ"/>
+                            <constraint firstItem="21" firstAttribute="top" secondItem="16" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rM5-GZ-CDl"/>
+                            <constraint firstItem="ulG-et-FCy" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="vqD-FD-NVf"/>
+                            <constraint firstItem="ulG-et-FCy" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="z3a-gN-51A"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ulG-et-FCy" id="OKF-fr-56L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="1284"/>
+            <point key="canvasLocation" x="2900" y="1278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -138,11 +152,20 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="CircularLayoutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CircularLayoutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="FlowLayoutExample" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlowLayoutExample.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>

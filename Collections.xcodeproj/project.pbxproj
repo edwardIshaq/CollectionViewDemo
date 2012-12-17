@@ -12,6 +12,7 @@
 		DB2B19F8167788E80054CCD6 /* blue_header.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19F7167788E80054CCD6 /* blue_header.jpeg */; };
 		DB2B19FB16778B7A0054CCD6 /* footer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19FA16778B7A0054CCD6 /* footer.jpeg */; };
 		DB2B19FD16778B910054CCD6 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2B19FC16778B910054CCD6 /* FooterView.xib */; };
+		DB3BD026167F883700FA5382 /* CircularCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3BD025167F883700FA5382 /* CircularCollectionViewLayout.m */; };
 		DB8CD96B16765DA800F498B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96A16765DA800F498B7 /* UIKit.framework */; };
 		DB8CD96D16765DA800F498B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96C16765DA800F498B7 /* Foundation.framework */; };
 		DB8CD96F16765DA800F498B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8CD96E16765DA800F498B7 /* CoreGraphics.framework */; };
@@ -25,7 +26,7 @@
 		DB8CD98716765DA800F498B7 /* FlowLayoutExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */; };
 		DB8CD98916765DA800F498B7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98816765DA800F498B7 /* first.png */; };
 		DB8CD98B16765DA800F498B7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98A16765DA800F498B7 /* first@2x.png */; };
-		DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98D16765DA900F498B7 /* SecondViewController.m */; };
+		DB8CD98E16765DA900F498B7 /* CircularLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98D16765DA900F498B7 /* CircularLayoutViewController.m */; };
 		DB8CD99016765DA900F498B7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98F16765DA900F498B7 /* second.png */; };
 		DB8CD99216765DA900F498B7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD99116765DA900F498B7 /* second@2x.png */; };
 		DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD9991676638D00F498B7 /* SimpleCell.m */; };
@@ -42,6 +43,8 @@
 		DB2B19F7167788E80054CCD6 /* blue_header.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_header.jpeg; sourceTree = "<group>"; };
 		DB2B19FA16778B7A0054CCD6 /* footer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footer.jpeg; sourceTree = "<group>"; };
 		DB2B19FC16778B910054CCD6 /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		DB3BD024167F883700FA5382 /* CircularCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularCollectionViewLayout.h; sourceTree = "<group>"; };
+		DB3BD025167F883700FA5382 /* CircularCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularCollectionViewLayout.m; sourceTree = "<group>"; };
 		DB8CD96616765DA800F498B7 /* Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8CD96A16765DA800F498B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB8CD96C16765DA800F498B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,8 +63,8 @@
 		DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutExample.m; sourceTree = "<group>"; };
 		DB8CD98816765DA800F498B7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DB8CD98A16765DA800F498B7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		DB8CD98C16765DA800F498B7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DB8CD98D16765DA900F498B7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DB8CD98C16765DA800F498B7 /* CircularLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularLayoutViewController.h; sourceTree = "<group>"; };
+		DB8CD98D16765DA900F498B7 /* CircularLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularLayoutViewController.m; sourceTree = "<group>"; };
 		DB8CD98F16765DA900F498B7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DB8CD99116765DA900F498B7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DB8CD9981676638D00F498B7 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCell.h; sourceTree = "<group>"; };
@@ -88,7 +91,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB2B19F916778B390054CCD6 /* Simple Collection */ = {
+		DB2B19F916778B390054CCD6 /* Flow Collection */ = {
 			isa = PBXGroup;
 			children = (
 				DB8CD98516765DA800F498B7 /* FlowLayoutExample.h */,
@@ -106,7 +109,29 @@
 				DBA0D4551677B1C400F9B040 /* UICollectionViewShelfLayout.h */,
 				DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */,
 			);
-			name = "Simple Collection";
+			name = "Flow Collection";
+			sourceTree = "<group>";
+		};
+		DB3BD022167F87B400FA5382 /* Circular Layout collection */ = {
+			isa = PBXGroup;
+			children = (
+				DB8CD98C16765DA800F498B7 /* CircularLayoutViewController.h */,
+				DB8CD98D16765DA900F498B7 /* CircularLayoutViewController.m */,
+				DB3BD024167F883700FA5382 /* CircularCollectionViewLayout.h */,
+				DB3BD025167F883700FA5382 /* CircularCollectionViewLayout.m */,
+			);
+			name = "Circular Layout collection";
+			sourceTree = "<group>";
+		};
+		DB3BD023167F87D700FA5382 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB8CD98816765DA800F498B7 /* first.png */,
+				DB8CD98A16765DA800F498B7 /* first@2x.png */,
+				DB8CD98F16765DA900F498B7 /* second.png */,
+				DB8CD99116765DA900F498B7 /* second@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DB8CD95B16765DA800F498B7 = {
@@ -140,16 +165,12 @@
 		DB8CD97016765DA800F498B7 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				DB2B19F916778B390054CCD6 /* Simple Collection */,
 				DB8CD97916765DA800F498B7 /* AppDelegate.h */,
 				DB8CD97A16765DA800F498B7 /* AppDelegate.m */,
 				DB8CD98216765DA800F498B7 /* MainStoryboard.storyboard */,
-				DB8CD98816765DA800F498B7 /* first.png */,
-				DB8CD98A16765DA800F498B7 /* first@2x.png */,
-				DB8CD98C16765DA800F498B7 /* SecondViewController.h */,
-				DB8CD98D16765DA900F498B7 /* SecondViewController.m */,
-				DB8CD98F16765DA900F498B7 /* second.png */,
-				DB8CD99116765DA900F498B7 /* second@2x.png */,
+				DB2B19F916778B390054CCD6 /* Flow Collection */,
+				DB3BD022167F87B400FA5382 /* Circular Layout collection */,
+				DB3BD023167F87D700FA5382 /* Resources */,
 				DB8CD97116765DA800F498B7 /* Supporting Files */,
 			);
 			path = Collections;
@@ -248,10 +269,11 @@
 				DB8CD97716765DA800F498B7 /* main.m in Sources */,
 				DB8CD97B16765DA800F498B7 /* AppDelegate.m in Sources */,
 				DB8CD98716765DA800F498B7 /* FlowLayoutExample.m in Sources */,
-				DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */,
+				DB8CD98E16765DA900F498B7 /* CircularLayoutViewController.m in Sources */,
 				DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */,
 				DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */,
 				DBA0D4571677B1C400F9B040 /* UICollectionViewShelfLayout.m in Sources */,
+				DB3BD026167F883700FA5382 /* CircularCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,12 +33,13 @@
     [self.collectionView registerNib:footerNib forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FOOTER_ID"];
     
     
-//    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
 //    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 //    self.collectionView.pagingEnabled = YES;
     
-    UICollectionViewShelfLayout *layout = [UICollectionViewShelfLayout new];
-    self.collectionView.collectionViewLayout = layout;
+//    UICollectionViewShelfLayout *layout = [UICollectionViewShelfLayout new];
+//    self.collectionView.collectionViewLayout = layout;
+    
     layout.minimumLineSpacing = 20.0;
     layout.itemSize = CGSizeMake(100, 100);
     layout.sectionInset = UIEdgeInsetsMake(20, 20, 40, 20);
