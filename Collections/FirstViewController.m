@@ -26,20 +26,24 @@
     self.collectionView.delegate = self;
     [self.collectionView registerClass:[SimpleCell class] forCellWithReuseIdentifier:@"SIMPLE_CELL_ID"];
     [self.collectionView registerClass:[UILabel class] forSupplementaryViewOfKind:@"header" withReuseIdentifier:@"SIMPLE_COLLECTION_HEADER"];
-    
+
     UINib *headerNib = [UINib nibWithNibName:@"HeaderView" bundle:nil];
     [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HEADER_ID"];
     UINib *footerNib = [UINib nibWithNibName:@"FooterView" bundle:nil];
     [self.collectionView registerNib:footerNib forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FOOTER_ID"];
     
+    
 //    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+//    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//    self.collectionView.pagingEnabled = YES;
+    
     UICollectionViewShelfLayout *layout = [UICollectionViewShelfLayout new];
     self.collectionView.collectionViewLayout = layout;
     layout.minimumLineSpacing = 20.0;
     layout.itemSize = CGSizeMake(100, 100);
     layout.sectionInset = UIEdgeInsetsMake(20, 20, 40, 20);
-    layout.headerReferenceSize = CGSizeMake(500, 65);
-    layout.footerReferenceSize = CGSizeMake(500, 75);
+    layout.headerReferenceSize = CGSizeMake(50, 65);
+    layout.footerReferenceSize = CGSizeMake(50, 75);
     
     UINib *decorationNib = [UINib nibWithNibName:@"DecorationView" bundle:nil];
     [layout registerNib:decorationNib forDecorationViewOfKind:@"Shelf"];
