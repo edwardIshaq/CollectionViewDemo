@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 EdwardIshaq. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FlowLayoutExample.h"
 #import "SimpleCell.h"
 #import "HeaderView.h"
 #import "UICollectionViewShelfLayout.h"
 
-@interface FirstViewController ()
+@interface FlowLayoutExample ()
 
 @end
 
-@implementation FirstViewController
+@implementation FlowLayoutExample
 
 
 - (void)viewDidLoad

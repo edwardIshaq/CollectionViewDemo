@@ -22,7 +22,7 @@
 		DB8CD97F16765DA800F498B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD97E16765DA800F498B7 /* Default@2x.png */; };
 		DB8CD98116765DA800F498B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98016765DA800F498B7 /* Default-568h@2x.png */; };
 		DB8CD98416765DA800F498B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98216765DA800F498B7 /* MainStoryboard.storyboard */; };
-		DB8CD98716765DA800F498B7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98616765DA800F498B7 /* FirstViewController.m */; };
+		DB8CD98716765DA800F498B7 /* FlowLayoutExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */; };
 		DB8CD98916765DA800F498B7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98816765DA800F498B7 /* first.png */; };
 		DB8CD98B16765DA800F498B7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98A16765DA800F498B7 /* first@2x.png */; };
 		DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98D16765DA900F498B7 /* SecondViewController.m */; };
@@ -56,8 +56,8 @@
 		DB8CD97E16765DA800F498B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DB8CD98016765DA800F498B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB8CD98316765DA800F498B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DB8CD98516765DA800F498B7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DB8CD98616765DA800F498B7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DB8CD98516765DA800F498B7 /* FlowLayoutExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutExample.h; sourceTree = "<group>"; };
+		DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutExample.m; sourceTree = "<group>"; };
 		DB8CD98816765DA800F498B7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DB8CD98A16765DA800F498B7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		DB8CD98C16765DA800F498B7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		DB2B19F916778B390054CCD6 /* Simple Collection */ = {
 			isa = PBXGroup;
 			children = (
-				DB8CD98516765DA800F498B7 /* FirstViewController.h */,
-				DB8CD98616765DA800F498B7 /* FirstViewController.m */,
+				DB8CD98516765DA800F498B7 /* FlowLayoutExample.h */,
+				DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */,
 				DB8CD9981676638D00F498B7 /* SimpleCell.h */,
 				DB8CD9991676638D00F498B7 /* SimpleCell.m */,
 				DB2B19F1167788390054CCD6 /* HeaderView.h */,
@@ -247,7 +247,7 @@
 			files = (
 				DB8CD97716765DA800F498B7 /* main.m in Sources */,
 				DB8CD97B16765DA800F498B7 /* AppDelegate.m in Sources */,
-				DB8CD98716765DA800F498B7 /* FirstViewController.m in Sources */,
+				DB8CD98716765DA800F498B7 /* FlowLayoutExample.m in Sources */,
 				DB8CD98E16765DA900F498B7 /* SecondViewController.m in Sources */,
 				DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */,
 				DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */,
