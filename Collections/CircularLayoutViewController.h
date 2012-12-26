@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CircularCollectionViewLayout;
 
 @interface CircularLayoutViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (retain, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (retain, nonatomic) IBOutlet CircularCollectionViewLayout *circularLayout;
+- (IBAction)numItemsChanged:(id)sender;
+@property (retain, nonatomic) IBOutlet UISlider *slider;
 
 @end

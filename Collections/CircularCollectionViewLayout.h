@@ -10,4 +10,5 @@
 
 @interface CircularCollectionViewLayout : UICollectionViewLayout
 
+@property (nonatomic, assign) NSUInteger numItems;
 @end

@@ -19,11 +19,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
+    self.circularLayout = (CircularCollectionViewLayout*)self.collectionView.collectionViewLayout;
     [self.collectionView registerClass:[SimpleCell class] forCellWithReuseIdentifier:@"SIMPLE_CELL_ID"];
-    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
-    layout.minimumLineSpacing = 20.0;
-    layout.itemSize = CGSizeMake(100, 100);
-
+    self.circularLayout.numItems = [self numItems];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,21 +35,30 @@
 
 - (void)dealloc {
     [_collectionView release];
+    [_slider release];
     [super dealloc];
 }
 
 #pragma mark - UICollectionViewDataSource implementation
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 50;
+    return [self numItems];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SimpleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SIMPLE_CELL_ID" forIndexPath:indexPath];
     cell.label = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
-    cell.transform = CGAffineTransformMakeRotation(arc4random()%1*M_2_PI);
     return cell;
 }
 
 
+- (IBAction)numItemsChanged:(id)sender {
+    self.circularLayout.numItems = [self numItems];
+//    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
+- (NSInteger)numItems {
+    NSInteger num = floorf(self.slider.value);
+    return num;
+}
 @end
