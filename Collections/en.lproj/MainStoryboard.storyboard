@@ -79,7 +79,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="55" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="60p-vS-rW8">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="60p-vS-rW8">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="3MD-7Z-ibv"/>
                                 </constraints>
@@ -167,6 +167,7 @@
                 <relationship kind="action" name="numItemsChanged:"/>
                 <relationship kind="outlet" name="circularLayout" candidateClass="CircularCollectionViewLayout"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="slider" candidateClass="UISlider"/>
             </relationships>
         </class>
         <class className="FlowLayoutExample" superclassName="UIViewController">

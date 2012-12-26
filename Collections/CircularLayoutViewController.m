@@ -53,8 +53,8 @@
 
 
 - (IBAction)numItemsChanged:(id)sender {
+    NSLog(@"%d items",[self numItems]);
     self.circularLayout.numItems = [self numItems];
-//    [self.collectionView.collectionViewLayout invalidateLayout];
 }
 
 - (NSInteger)numItems {

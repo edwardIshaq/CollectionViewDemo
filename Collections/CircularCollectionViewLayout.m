@@ -22,10 +22,13 @@
     [super prepareLayout];
     //calculate the degree increment
     //360 / items_count
+    
+#warning Consider preparing the layout attributes here and just adding or removing extra ones for memory conservation
 }
 
 - (void)setNumItems:(NSUInteger)numItems {
     _numItems = numItems;
+    [self.collectionView reloadData];
     [self invalidateLayout];
 }
 
@@ -36,6 +39,7 @@
     
     return contentSize;
 }
+
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     if (self.numItems == 0) {
         return nil;
@@ -49,14 +53,14 @@
     NSMutableArray *array = [NSMutableArray new];
     CGFloat x,y,alpha,angle;
     angle = (CGFloat)2*M_PI/self.numItems;
+    UICollectionViewLayoutAttributes *attrs;
     
-
     for (int i=0; i<self.numItems; i++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        UICollectionViewLayoutAttributes *attrs = [[UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath] retain];
+        attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
         alpha = i * angle;
-        x = R * cosf(alpha) + center.x;
-        y = R * cosf(M_PI_2-alpha) + center.y;
+        x = floorf(R * cosf(alpha) + center.x);
+        y = floorf(R * cosf(M_PI_2-alpha) + center.y);
         attrs.center = CGPointMake(x, y);
         attrs.size = CGSizeMake(100, 100);
         if (alpha > 0 && alpha < M_PI_4) {
@@ -66,37 +70,11 @@
             attrs.zIndex = i;
         }
         [array addObject:attrs];
-        [attrs release];
     }
     
     NSArray *result = [NSArray arrayWithArray:array];
     [array release];
     return result;
 }
-
-//- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    CGRect screen   = [[UIScreen mainScreen] bounds];
-//    CGFloat R  = fminf(screen.size.width, screen.size.height)/2.0;
-//    CGPoint center = CGPointMake(R, R);
-//    R -= 100;   //Shrink the radius so that the item bounds are in the view
-//    
-//    CGFloat x,y,alpha,angle;
-//    angle = (CGFloat)2*M_PI/self.numItems;
-//
-//    UICollectionViewLayoutAttributes *attrs = [[UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath] retain];
-//    alpha = indexPath.row * angle;
-//    x = R * cosf(alpha) + center.x;
-//    y = R * cosf(M_PI_2-alpha) + center.y;
-//    attrs.center = CGPointMake(x, y);
-//    attrs.size = CGSizeMake(100, 100);
-//    if (alpha > 0 && alpha < M_PI_4) {
-//        attrs.zIndex = indexPath.row;
-//    }
-//    else if (alpha >= M_PI_4 && alpha < M_PI_2){
-//        attrs.zIndex = indexPath.row;
-//    }
-//
-//    return attrs;
-//}
 
 @end
