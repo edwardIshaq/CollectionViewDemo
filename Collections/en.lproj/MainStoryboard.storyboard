@@ -24,7 +24,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="937" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Vc-Ix-5Qc">
                                 <color key="backgroundColor" red="0.75686274509999996" green="0.76078431369999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="776" id="Bg5-HM-bfw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="776" type="user" id="Bg5-HM-bfw"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wTc-ga-0If">
                                     <size key="itemSize" width="50" height="50"/>
@@ -48,12 +48,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6Vc-Ix-5Qc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FJP-yP-tJV"/>
-                            <constraint firstAttribute="trailing" secondItem="6Vc-Ix-5Qc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Fl5-M0-ySK"/>
-                            <constraint firstItem="18" firstAttribute="top" relation="greaterThanOrEqual" secondItem="17" secondAttribute="top" constant="30" type="user" id="Gw9-xt-NZx"/>
-                            <constraint firstItem="18" firstAttribute="top" secondItem="17" secondAttribute="top" constant="30" id="fxL-2m-4ct"/>
-                            <constraint firstAttribute="bottom" secondItem="6Vc-Ix-5Qc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="k3u-da-B2N"/>
-                            <constraint firstItem="18" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" type="user" id="lva-ku-k1z"/>
-                            <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="20" type="user" id="wJr-YN-LRt"/>
+                            <constraint firstItem="6Vc-Ix-5Qc" firstAttribute="top" relation="lessThanOrEqual" secondItem="18" secondAttribute="bottom" priority="953" constant="96" type="user" id="FTe-ia-cwJ"/>
+                            <constraint firstAttribute="centerX" secondItem="6Vc-Ix-5Qc" secondAttribute="centerX" type="user" id="SLi-OD-ndf"/>
+                            <constraint firstAttribute="bottom" secondItem="6Vc-Ix-5Qc" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="k3u-da-B2N"/>
+                            <constraint firstItem="18" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="lva-ku-k1z"/>
+                            <constraint firstAttribute="centerX" secondItem="18" secondAttribute="centerX" type="user" id="s8G-7o-axu"/>
+                            <constraint firstItem="18" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="user" id="vFv-ya-wZv"/>
+                            <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="wJr-YN-LRt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
@@ -90,7 +91,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MY0-wy-0jZ">
                                 <color key="backgroundColor" red="0.75686274509999996" green="0.76078431369999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="787" id="gdL-Xx-aDs"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="915" constant="807" type="user" id="4OV-QU-2xV"/>
                                 </constraints>
                                 <collectionViewLayout key="collectionViewLayout" id="08j-Hd-U4C" customClass="CircularCollectionViewLayout"/>
                                 <cells>
@@ -112,14 +113,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AxC-eB-Aj5"/>
-                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="BLx-4h-Yre"/>
+                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="user" id="BLx-4h-Yre"/>
+                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="top" secondItem="60p-vS-rW8" secondAttribute="bottom" constant="32" type="user" id="Ex8-7L-Y1e"/>
+                            <constraint firstItem="60p-vS-rW8" firstAttribute="top" secondItem="21" secondAttribute="bottom" constant="31" type="user" id="Q6Z-yl-G1z"/>
                             <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="V6v-g0-Zr8"/>
-                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="ZBD-du-mGt"/>
-                            <constraint firstItem="60p-vS-rW8" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="201" id="bJ8-UG-rau"/>
-                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="gYA-W1-bGP"/>
-                            <constraint firstItem="21" firstAttribute="top" secondItem="16" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rM5-GZ-CDl"/>
-                            <constraint firstItem="60p-vS-rW8" firstAttribute="top" secondItem="16" secondAttribute="top" constant="121" id="zIn-A7-th6"/>
+                            <constraint firstItem="MY0-wy-0jZ" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="user" id="ZBD-du-mGt"/>
+                            <constraint firstAttribute="centerX" secondItem="MY0-wy-0jZ" secondAttribute="centerX" type="user" id="lXp-DX-qHS"/>
+                            <constraint firstAttribute="centerX" secondItem="21" secondAttribute="centerX" type="user" id="p9p-jX-2Tu"/>
+                            <constraint firstItem="21" firstAttribute="top" secondItem="16" secondAttribute="top" constant="20" symbolic="YES" type="user" id="rM5-GZ-CDl"/>
+                            <constraint firstAttribute="centerX" secondItem="60p-vS-rW8" secondAttribute="centerX" type="user" id="rNB-3K-sPg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>

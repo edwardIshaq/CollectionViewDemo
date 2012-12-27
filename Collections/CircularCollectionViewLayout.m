@@ -39,21 +39,22 @@
 }
 
 - (CGSize)collectionViewContentSize {
-    CGRect screen = [[UIScreen mainScreen] bounds];
-    CGFloat minDim      = fminf(screen.size.width, screen.size.height);
-    CGSize contentSize  = CGSizeMake(minDim, minDim);
-    
-    return contentSize;
+    CGRect collectionFrame = self.collectionView.frame;
+    return collectionFrame.size;
 }
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return YES;
+}
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     if (self.numItems == 0) {
         return nil;
     }
     
-    CGRect screen   = [[UIScreen mainScreen] bounds];
-    CGFloat R  = fminf(screen.size.width, screen.size.height)/2.0;
-    CGPoint center = CGPointMake(R, R);
+    CGRect collectionFrame   = self.collectionView.frame;
+    CGPoint center = CGPointMake(collectionFrame.size.width/2, collectionFrame.size.height/2);
+    
+    CGFloat R  = fminf(collectionFrame.size.width, collectionFrame.size.height)/2.0;
     R -= 100;   //Shrink the radius so that the item bounds are in the view
     
     NSMutableArray *array = [NSMutableArray new];
