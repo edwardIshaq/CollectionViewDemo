@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CircularCollectionViewLayout : UICollectionViewLayout
+@interface CircularCollectionViewLayout : UICollectionViewLayout {
+    @private
+    CGFloat angle;
+}
 
 @property (nonatomic, assign) NSUInteger numItems;
 @end

@@ -20,10 +20,15 @@
 }
 - (void)prepareLayout {
     [super prepareLayout];
+
     //calculate the degree increment
     //360 / items_count
-    
-#warning Consider preparing the layout attributes here and just adding or removing extra ones for memory conservation
+    if (self.numItems) {
+        angle = (CGFloat)2*M_PI/self.numItems;
+    }
+    else{
+        angle = 0;
+    }
 }
 
 - (void)setNumItems:(NSUInteger)numItems {
@@ -51,8 +56,7 @@
     R -= 100;   //Shrink the radius so that the item bounds are in the view
     
     NSMutableArray *array = [NSMutableArray new];
-    CGFloat x,y,alpha,angle;
-    angle = (CGFloat)2*M_PI/self.numItems;
+    CGFloat x,y,alpha;
     UICollectionViewLayoutAttributes *attrs;
     
     for (int i=0; i<self.numItems; i++) {
@@ -63,6 +67,7 @@
         y = floorf(R * cosf(M_PI_2-alpha) + center.y);
         attrs.center = CGPointMake(x, y);
         attrs.size = CGSizeMake(100, 100);
+        
         if (alpha > 0 && alpha < M_PI_4) {
             attrs.zIndex = i;
         }
