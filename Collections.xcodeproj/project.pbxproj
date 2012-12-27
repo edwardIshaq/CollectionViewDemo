@@ -32,7 +32,6 @@
 		DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD9991676638D00F498B7 /* SimpleCell.m */; };
 		DBA0D4511677A3CF00F9B040 /* shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4501677A3CF00F9B040 /* shelf.png */; };
 		DBA0D4541677A3E700F9B040 /* DecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4531677A3E700F9B040 /* DecorationView.xib */; };
-		DBA0D4571677B1C400F9B040 /* UICollectionViewShelfLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */; };
 		DBA0D4591677B79A00F9B040 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA0D4581677B79A00F9B040 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +70,6 @@
 		DB8CD9991676638D00F498B7 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCell.m; sourceTree = "<group>"; };
 		DBA0D4501677A3CF00F9B040 /* shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf.png; sourceTree = "<group>"; };
 		DBA0D4531677A3E700F9B040 /* DecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecorationView.xib; sourceTree = "<group>"; };
-		DBA0D4551677B1C400F9B040 /* UICollectionViewShelfLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewShelfLayout.h; sourceTree = "<group>"; };
-		DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewShelfLayout.m; sourceTree = "<group>"; };
 		DBA0D4581677B79A00F9B040 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,8 +103,6 @@
 				DB2B19FC16778B910054CCD6 /* FooterView.xib */,
 				DBA0D4501677A3CF00F9B040 /* shelf.png */,
 				DBA0D4531677A3E700F9B040 /* DecorationView.xib */,
-				DBA0D4551677B1C400F9B040 /* UICollectionViewShelfLayout.h */,
-				DBA0D4561677B1C400F9B040 /* UICollectionViewShelfLayout.m */,
 			);
 			name = "Flow Collection";
 			sourceTree = "<group>";
@@ -272,7 +267,6 @@
 				DB8CD98E16765DA900F498B7 /* CircularLayoutViewController.m in Sources */,
 				DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */,
 				DB2B19F3167788390054CCD6 /* HeaderView.m in Sources */,
-				DBA0D4571677B1C400F9B040 /* UICollectionViewShelfLayout.m in Sources */,
 				DB3BD026167F883700FA5382 /* CircularCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

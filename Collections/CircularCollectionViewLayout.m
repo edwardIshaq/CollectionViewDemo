@@ -9,7 +9,6 @@
 #import "CircularCollectionViewLayout.h"
 
 @implementation CircularCollectionViewLayout
-//@synthesize numItems = _numItems;
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
