@@ -54,8 +54,7 @@
     CGRect collectionFrame   = self.collectionView.frame;
     CGPoint center = CGPointMake(collectionFrame.size.width/2, collectionFrame.size.height/2);
     
-    CGFloat R  = fminf(collectionFrame.size.width, collectionFrame.size.height)/2.0;
-    R -= 100;   //Shrink the radius so that the item bounds are in the view
+    CGFloat R  = fminf(collectionFrame.size.width, collectionFrame.size.height)/2.0 - 100;
     
     NSMutableArray *array = [NSMutableArray new];
     CGFloat x,y,alpha;
