@@ -15,6 +15,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         _numItems = 0;
+        angle = 0;
     }
     return self;
 }
@@ -58,7 +59,7 @@
     NSMutableArray *array = [NSMutableArray new];
     CGFloat x,y,alpha;
     UICollectionViewLayoutAttributes *attrs;
-    
+    int z=0;
     for (int i=0; i<self.numItems; i++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
         attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
@@ -68,12 +69,14 @@
         attrs.center = CGPointMake(x, y);
         attrs.size = CGSizeMake(100, 100);
         
-        if (alpha > 0 && alpha < M_PI_4) {
-            attrs.zIndex = i;
+        if ((alpha > 0 && alpha <= M_PI_2) || (alpha > 1.5*M_PI && alpha <= 2*M_PI)) {
+            attrs.zIndex = z++;
         }
-        else if (alpha >= M_PI_4 && alpha < M_PI_2){
-            attrs.zIndex = i;
+        else if (alpha > M_PI_2 && alpha <= 1.5*M_PI)
+        {
+            attrs.zIndex = z--;
         }
+
         [array addObject:attrs];
     }
     
