@@ -14,20 +14,29 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+
         UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         bg.backgroundColor = [self randomColor];
+        self.backgroundView = bg;
+        [bg release];
         
         UIView *selectedBg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         selectedBg.backgroundColor = [UIColor yellowColor];
-        
-        self.backgroundView = bg;
-        [bg release];
         self.selectedBackgroundView = selectedBg;
         [selectedBg release];
-        
+
         indexLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 20)];
         [self.contentView addSubview:indexLabel];
+        
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:[self randomImage]];
+        CGRect imgFrame = CGRectMake(0, 20, frame.size.width, frame.size.height-20);
+        imgFrame = CGRectInset(imgFrame, 5, 5);
+        [imgView setFrame:imgFrame];
+        [imgView setContentMode:UIViewContentModeScaleToFill];
+        [self.contentView addSubview:imgView];
+        
+        [self.contentView setClipsToBounds:YES];
+        [imgView release];
     }
     return self;
 }
@@ -48,5 +57,12 @@
 
 - (UIColor*)randomColor {
     return [UIColor colorWithRed:arc4random()%256/255. green:arc4random()%256/255. blue:arc4random()%256/255. alpha:1];
+}
+
+- (UIImage*)randomImage {
+    int random = arc4random()%12 + 1;
+    NSLog(@"%d", random);
+    NSString *imgName = [NSString stringWithFormat:@"image-%d.jpeg",random];
+    return [UIImage imageNamed:imgName];
 }
 @end
