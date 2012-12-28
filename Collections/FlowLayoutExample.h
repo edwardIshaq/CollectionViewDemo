@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  FlowLayoutExample.h
 //  Collections
 //
 //  Created by Edward Ashak on 12/10/12.

@@ -24,15 +24,13 @@
 		DB8CD98116765DA800F498B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98016765DA800F498B7 /* Default-568h@2x.png */; };
 		DB8CD98416765DA800F498B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98216765DA800F498B7 /* MainStoryboard.storyboard */; };
 		DB8CD98716765DA800F498B7 /* FlowLayoutExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */; };
-		DB8CD98916765DA800F498B7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98816765DA800F498B7 /* first.png */; };
-		DB8CD98B16765DA800F498B7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98A16765DA800F498B7 /* first@2x.png */; };
 		DB8CD98E16765DA900F498B7 /* CircularLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD98D16765DA900F498B7 /* CircularLayoutViewController.m */; };
-		DB8CD99016765DA900F498B7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD98F16765DA900F498B7 /* second.png */; };
-		DB8CD99216765DA900F498B7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8CD99116765DA900F498B7 /* second@2x.png */; };
 		DB8CD99A1676638D00F498B7 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD9991676638D00F498B7 /* SimpleCell.m */; };
 		DBA0D4511677A3CF00F9B040 /* shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4501677A3CF00F9B040 /* shelf.png */; };
 		DBA0D4541677A3E700F9B040 /* DecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA0D4531677A3E700F9B040 /* DecorationView.xib */; };
 		DBA0D4591677B79A00F9B040 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA0D4581677B79A00F9B040 /* QuartzCore.framework */; };
+		DBD2E977168E297000280BE7 /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD2E976168E297000280BE7 /* Circle.png */; };
+		DBD2E979168E2A2F00280BE7 /* Flow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD2E978168E2A2F00280BE7 /* Flow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,17 +58,15 @@
 		DB8CD98316765DA800F498B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DB8CD98516765DA800F498B7 /* FlowLayoutExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutExample.h; sourceTree = "<group>"; };
 		DB8CD98616765DA800F498B7 /* FlowLayoutExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutExample.m; sourceTree = "<group>"; };
-		DB8CD98816765DA800F498B7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		DB8CD98A16765DA800F498B7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		DB8CD98C16765DA800F498B7 /* CircularLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularLayoutViewController.h; sourceTree = "<group>"; };
 		DB8CD98D16765DA900F498B7 /* CircularLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularLayoutViewController.m; sourceTree = "<group>"; };
-		DB8CD98F16765DA900F498B7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		DB8CD99116765DA900F498B7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DB8CD9981676638D00F498B7 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCell.h; sourceTree = "<group>"; };
 		DB8CD9991676638D00F498B7 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCell.m; sourceTree = "<group>"; };
 		DBA0D4501677A3CF00F9B040 /* shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf.png; sourceTree = "<group>"; };
 		DBA0D4531677A3E700F9B040 /* DecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecorationView.xib; sourceTree = "<group>"; };
 		DBA0D4581677B79A00F9B040 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DBD2E976168E297000280BE7 /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
+		DBD2E978168E2A2F00280BE7 /* Flow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +117,8 @@
 		DB3BD023167F87D700FA5382 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DB8CD98816765DA800F498B7 /* first.png */,
-				DB8CD98A16765DA800F498B7 /* first@2x.png */,
-				DB8CD98F16765DA900F498B7 /* second.png */,
-				DB8CD99116765DA900F498B7 /* second@2x.png */,
+				DBD2E976168E297000280BE7 /* Circle.png */,
+				DBD2E978168E2A2F00280BE7 /* Flow.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -241,16 +235,14 @@
 				DB8CD97F16765DA800F498B7 /* Default@2x.png in Resources */,
 				DB8CD98116765DA800F498B7 /* Default-568h@2x.png in Resources */,
 				DB8CD98416765DA800F498B7 /* MainStoryboard.storyboard in Resources */,
-				DB8CD98916765DA800F498B7 /* first.png in Resources */,
-				DB8CD98B16765DA800F498B7 /* first@2x.png in Resources */,
-				DB8CD99016765DA900F498B7 /* second.png in Resources */,
-				DB8CD99216765DA900F498B7 /* second@2x.png in Resources */,
 				DB2B19F6167788520054CCD6 /* HeaderView.xib in Resources */,
 				DB2B19F8167788E80054CCD6 /* blue_header.jpeg in Resources */,
 				DB2B19FB16778B7A0054CCD6 /* footer.jpeg in Resources */,
 				DB2B19FD16778B910054CCD6 /* FooterView.xib in Resources */,
 				DBA0D4511677A3CF00F9B040 /* shelf.png in Resources */,
 				DBA0D4541677A3E700F9B040 /* DecorationView.xib in Resources */,
+				DBD2E977168E297000280BE7 /* Circle.png in Resources */,
+				DBD2E979168E2A2F00280BE7 /* Flow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

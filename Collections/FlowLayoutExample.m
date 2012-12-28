@@ -20,29 +20,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    [self.collectionView registerClass:[SimpleCell class] forCellWithReuseIdentifier:@"SIMPLE_CELL_ID"];
-    [self.collectionView registerClass:[UILabel class] forSupplementaryViewOfKind:@"header" withReuseIdentifier:@"SIMPLE_COLLECTION_HEADER"];
 
+    //register cell
+    [self.collectionView registerClass:[SimpleCell class] forCellWithReuseIdentifier:@"SIMPLE_CELL_ID"];
+
+    //register header
     UINib *headerNib = [UINib nibWithNibName:@"HeaderView" bundle:nil];
     [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HEADER_ID"];
+    
+    //register footer
     UINib *footerNib = [UINib nibWithNibName:@"FooterView" bundle:nil];
     [self.collectionView registerNib:footerNib forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FOOTER_ID"];
     
-    
+    //adjust layout
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
     layout.minimumLineSpacing = 20.0;
     layout.itemSize = CGSizeMake(100, 100);
     layout.sectionInset = UIEdgeInsetsMake(20, 20, 40, 20);
     layout.headerReferenceSize = CGSizeMake(50, 65);
     layout.footerReferenceSize = CGSizeMake(50, 75);
-    
-    UINib *decorationNib = [UINib nibWithNibName:@"DecorationView" bundle:nil];
-    [layout registerNib:decorationNib forDecorationViewOfKind:@"Shelf"];
-
-    self.navigationItem.title = @"Simple Collection Using Flow layout";
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,13 +58,13 @@
 #pragma mark - UICollectionViewDataSource implementation
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 50;
+    return 23;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SimpleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SIMPLE_CELL_ID" forIndexPath:indexPath];
     cell.label = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
-    cell.transform = CGAffineTransformMakeRotation(arc4random()%1*M_2_PI);
+//    cell.transform = CGAffineTransformMakeRotation(arc4random()%1*M_2_PI);
     return cell;
 }
 

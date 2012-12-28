@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Flow Layout Example - First-->
+        <!--Flow Layout Example - Flow Layout-->
         <scene sceneID="11">
             <objects>
                 <viewController id="2" customClass="FlowLayoutExample" sceneMemberID="viewController">
@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="602" text="UICollection View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="602" text="Flow Layout Demo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="18">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,7 +54,7 @@
                             <constraint firstAttribute="centerX" secondItem="6Vc-Ix-5Qc" secondAttribute="centerX" type="user" id="vXf-Ed-2EA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Flow Layout" image="Flow.png" id="7"/>
                     <connections>
                         <outlet property="collectionView" destination="6Vc-Ix-5Qc" id="NcD-Xc-2lo"/>
                     </connections>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="2907" y="137"/>
         </scene>
-        <!--Circular Layout View Controller - Second-->
+        <!--Circular Layout View Controller - Circular Layout-->
         <scene sceneID="13">
             <objects>
                 <viewController id="3" customClass="CircularLayoutViewController" sceneMemberID="viewController">
@@ -121,7 +121,7 @@
                             <constraint firstAttribute="centerX" secondItem="60p-vS-rW8" secondAttribute="centerX" type="user" id="rNB-3K-sPg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Circular Layout" image="Circle.png" id="6"/>
                     <connections>
                         <outlet property="circularLayout" destination="08j-Hd-U4C" id="BFX-Kb-f35"/>
                         <outlet property="collectionView" destination="MY0-wy-0jZ" id="fwn-hL-PFA"/>
@@ -153,8 +153,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="Circle.png" width="30" height="30"/>
+        <image name="Flow.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="CircularCollectionViewLayout" superclassName="UICollectionViewLayout">
