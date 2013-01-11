@@ -61,7 +61,6 @@
 
 - (UIImage*)randomImage {
     int random = arc4random()%12 + 1;
-    NSLog(@"%d", random);
     NSString *imgName = [NSString stringWithFormat:@"image-%d.jpeg",random];
     return [UIImage imageNamed:imgName];
 }
